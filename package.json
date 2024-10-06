@@ -1,0 +1,24 @@
+{
+  "name": "webchat",
+  "version": "1.0.0",
+  "description": "Real-time chat with socket.io",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/argfiz/webchat.git"
+  },
+  "author": "ArgFiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/argfiz/webchat/issues"
+  },
+  "homepage": "https://github.com/argfiz/webchat#readme",
+  "dependencies": {
+    "express": "^4.21.0",
+    "socket.io": "^4.8.0"
+  }
+}
