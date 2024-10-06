@@ -5,11 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/chat.css">
+    <title>¡Direct Chat!</title>
 </head>
 <body>
     
-    <h1>Hola UwU</h1>
+    <header>
+        <h1>Direct Chat</h1>
+    </header>
+
+    <main>
+
+        <div id="all-messages"></div>
+
+        <div class="send-message">
+            <input type="text" id="message">
+            <button type="button" id="send-message" class="btn secondary">Enviar</button>
+        </div>
+
+    </main>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/script.js"></script>
