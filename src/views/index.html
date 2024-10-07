@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +11,22 @@
 <body>
     
     <header>
-        <h1>Direct Chat</h1>
+        <h1>Direct Chat 💬</h1>
     </header>
 
     <main>
 
-        <div id="all-messages"></div>
-
-        <div class="send-message">
-            <input type="text" id="message">
-            <button type="button" id="send-message" class="btn secondary">Enviar</button>
-        </div>
-
+        <div class="card">
+          <div class="chat-header">Room N°1</div>
+            <div class="chat-window">
+              <ul id="messages-list" class="message-list"></ul>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" class="message-input" placeholder="Type your message here">
+                <button id="send-message" class="send-button">Send</button>
+            </div>
+          </div>
+        
     </main>
 
     <script src="/socket.io/socket.io.js"></script>

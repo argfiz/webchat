@@ -1,11 +1,11 @@
 const socket = io();
 
 const send = document.querySelector("#send-message");
-const allMessages = document.querySelector("#all-messages");
+const messagesList = document.querySelector("#messages-list");
 
 send.addEventListener("click", () => {
 
-    const message = document.querySelector("#message");
+    const message = document.querySelector("#message-input");
 
     socket.emit("message", message.value);
 
@@ -16,26 +16,26 @@ send.addEventListener("click", () => {
 socket.on("message", ({user, message}) => {
 
     const msg = document.createRange().createContextualFragment(`
-    <div class="message">
+    <li><div class="message">
                 
         <div class="image-container">
-            <img src="/images/michi.jpeg">
+            <img src="/images/avatar.jpeg">
         </div>
 
         <div class="message-body">
             
             <div class="user-info">
                 <span class="username">${user}</span>
-                <span class="time">Hace 1 segundo</span>
+                <span class="time">hace 1 segundo</span>
             </div>
 
             <p>${message}</p>
 
         </div>
         
-    </div>
+    </div></li>
     `);
 
-    allMessages.append(msg);
+    messagesList.append(msg);
 
 });

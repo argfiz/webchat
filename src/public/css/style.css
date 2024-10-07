@@ -4,12 +4,22 @@
     box-sizing: border-box;
 }
 
+body main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background: #43a8f0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background: #5865F2;
     color: #fff;
     padding: 7px;
 }
