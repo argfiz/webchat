@@ -1,5 +1,12 @@
 # Welcome to Direct Chat 💬
 El proyecto WebChat es una aplicación de chat en tiempo real que permite a los usuarios comunicarse entre sí. 
+
+### Register user
+  ![Preview webchat](./public/webchat.png)
+### Chatbox
+  ![Preview webchat2](./public/webchat2.jpg)
+
+
 Tecnologías utilizadas:
 - Node.js y Express para el servidor backend⁠
 
@@ -31,3 +38,8 @@ Buenas prácticas:
 - Uso de estilos modulares y reutilizables⁠
 
 - Implementación de seguridad básica (manejo de cookies para autenticación)
+
+## License
+
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
